@@ -292,12 +292,12 @@ void presionBoton() {
     tempC = (valorCrudo * 3.3 / 4095.0) * 100.0; // Nueva fórmula de conversión para temperaturas positivas
   }
   // Determinar el ángulo según la temperatura
-  if (tempC < 37.0) {
+  if (tempC < 36.0) {
     analogWrite(ledVerde, 255);
     analogWrite(ledAmarillo, 0);
     analogWrite(ledRoja, 0);
     angulo = 0; // Establecer ángulo en 0°
-  } else if (tempC >= 37.0 && tempC < 37.5) {
+  } else if (tempC >= 36.5 && tempC < 37.5) {
     analogWrite(ledVerde, 0);
     analogWrite(ledAmarillo, 255);
     analogWrite(ledRoja, 0);
