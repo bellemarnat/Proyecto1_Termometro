@@ -1,5 +1,6 @@
 // Librerias
 #include <Arduino.h>
+#include "config.h"
 
 // Definición de pines
 #define servoPin 25 // PWM para el servo
